@@ -1,0 +1,16 @@
+:host nb-layout-header a {
+  font-size: 2rem;
+  text-decoration: none;
+}
+:host nb-layout-column:first-child {
+  background: rgb(176, 210, 211);
+}
+
+.header-container{
+  justify-content: space-between;
+}
+.left-sidebar{
+  transition: width 0.3s ease;
+}
+
+

@@ -1,0 +1,23 @@
+<nb-layout>
+  <nb-layout-header fixed>
+    <img src="/assets/minilogo_tmp.png" style="height: 10vh;"/>
+    <img src="/assets/pes_logo.png" style="height: 5vh;"/>
+    <nb-actions style="margin-left: auto; margin-right: 0; margin-bottom: auto">
+      <nb-action>
+      <nb-user size="large"
+               name="{{user}}"
+               badgeStatus="success"
+               badgePosition="bottom right" [nbContextMenu]="items">
+      </nb-user>
+      </nb-action>
+    </nb-actions>
+  </nb-layout-header>
+
+  <nb-sidebar class="left-sidebar">
+            <nb-menu [items]="item_menu">
+            </nb-menu>
+            <nb-sidebar-footer center>♥ from the Devs Team</nb-sidebar-footer>      
+  </nb-sidebar>
+  <nb-layout-column class="main-content" [nbSpinner]="loading"><router-outlet></router-outlet></nb-layout-column>
+  
+</nb-layout>
